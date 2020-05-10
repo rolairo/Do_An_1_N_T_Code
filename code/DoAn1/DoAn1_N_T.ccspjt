@@ -1,0 +1,60 @@
+[Directories]
+Include=D:\APP\PICC\Devices\;D:\APP\PICC\Drivers\;C:\Users\DELL\Desktop\project do an\code\;C:\Users\DELL\Desktop\project do an\code\DS1307\;C:\Users\DELL\Desktop\project do an\code\LCD\;C:\Users\DELL\Desktop\project do an\Thu Vien\
+Library=
+LinkerScript=
+[defines]
+enabled=0
+chip=1
+D1=
+V1=
+[fileformats]
+forcecoff=1
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+[PROJECT]
+Target=DoAn1_N_T.hex
+Development_Mode=
+Processor_Text=PIC16F877
+ToolSuite=CCS
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+FileList=DoAn1_N_T.c
+[DoAn1_N_T.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=DoAn1_N_T.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[CompilerVersion]
+Fixed=
+[Opened Files]
+1=DoAn1_N_T.c
+2=..\LCD\LCD2004.c
+3=D:\CET\vi xu li(PIC16F887)\Tong_hop_tron_FILE_Khoa_hoc\LCD\LCD_20X4\TV_LCD_20x4.c
+4=
+5=
+6=..\..\Thu Vien\TV_PICKIT2_SHIFT_LCD.c
+7=
+8=
+[Units]
+Count=1
+1=DoAn1_N_T (main)

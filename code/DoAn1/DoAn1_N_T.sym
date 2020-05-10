@@ -1,0 +1,318 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @MEMSET.P2
+004-005 @WRITE_PROGRAM_MEMORY8.P3
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021-022 __DYNAMIC_HEAD
+023-024 strtok.save
+025     NAM_DS13
+026     THANG_DS13
+027     NGAY_DS13
+028     THU_DS13
+029     GIO_DS13
+02A     PHUT_DS13
+02B     GIAY_DS13
+02C     MA_DS13
+02D     CONTROL_DS13
+02E     GIAYTAM
+02F-03E mangKyTu
+03F     key
+040-047 tk
+048-04F mk
+050.0   isDangNhapSuccess
+050.1   isAdmin
+050.2   TKMKisInPuted
+050.3   isTaoTK
+050.4   isInputOK
+050.5   userDaDangNhap
+051-052 tkAdmin
+053-056 @STRING816
+057     vitriTK
+058     vitriMK
+059     vitriTKSelected
+05A     isLevelMhOfAdmin
+05B     isLevelMhOfUser
+05C     soLanSai
+05D     tang
+05E     tangcu
+05F     giam
+060     numBerOfMangContro
+061-068 lichSuLogin
+077     @SCRATCH
+077     @MEMSET.P1
+078     @SCRATCH
+078     _RETURN_
+078     @MEMSET.P1
+079     @SCRATCH
+07A     @SCRATCH
+0A0-0BD arr
+0BE-0BF MAIN.i
+0C0     MAIN.c
+0C1-0C8 MAIN.arrXoa
+0C9.0   MAIN.resultTaoTK
+0CA-0CD MAIN.arr1
+0CE     KEY_NHAN.MAQUETCOT
+0CE-0D5 checkMK.arr
+0CE-0CF readAllEpprom.i
+0CE     xuLyXemThem.i
+0CE     xuLyInputTK.HANG
+0CE-0D5 checkTK.arr
+0CE-0CF DisplayInputMK.arr
+0CE     sl.so
+0CE     manHinhThongBaoSai.@SCRATCH1
+0CE     kiemTraTKMK.@SCRATCH1
+0CE     thongBaoDoiMKTC.@SCRATCH1
+0CE     xulyInputMK.@SCRATCH1
+0CE     MAIN.@SCRATCH1
+0CF     hienThiNDungCtRaLCD.i
+0CF-0D0 DisplayInputTK.arr
+0CF     KEY_NHAN.MAPHIM
+0CF     sl.x
+0CF     xuLyInputTK.@SCRATCH1
+0CF     MAIN.@SCRATCH2
+0D0     sl.y
+0D0     KEY_NHAN.HANG
+0D0     hienThiNDungCtRaLCD.chuc
+0D0-0D1 free.ptr
+0D0-0D1 readAllEpprom.d
+0D0     DisplayInputMK.@SCRATCH1
+0D0     MAIN.@SCRATCH3
+0D1     sl.n
+0D1     KEY_NHAN.COT
+0D1     hienThiNDungCtRaLCD.donvi
+0D1     DisplayInputTK.HANG
+0D2-0D3 malloc.size
+0D2-0D3 inputData.arr
+0D2-0D3 free.node
+0D2     hienthi.vitri
+0D2     @MUL88.P1
+0D2     sl.@SCRATCH1
+0D2     KEY_NHAN.@SCRATCH1
+0D2     DisplayInputTK.@SCRATCH1
+0D2     readAllEpprom.@SCRATCH1
+0D2     hienThiNDungCtRaLCD.@SCRATCH1
+0D3     hienthi.i
+0D3     @MUL88.P1
+0D3     readAllEpprom.@SCRATCH2
+0D3     hienThiNDungCtRaLCD.@SCRATCH2
+0D4     inputData.vitri
+0D4     @DIV88.P1
+0D4-0D5 malloc.node
+0D4-0D5 free.nsize
+0D4     hienthi.@SCRATCH1
+0D5     @DIV88.P1
+0D5     inputData.@SCRATCH1
+0D5     hienthi.@SCRATCH2
+0D6     @I2C_WRITE_1.P1
+0D6-0D7 writeEEPROM.arr
+0D6     lcd_goto_xy.x
+0D6-0D7 checkTK.i
+0D6     @I2C_READ_1.P1
+0D6     @delay_ms1.P2
+0D6     resetTKMK.i
+0D6-0D7 malloc.new
+0D6-0D7 traverse.node
+0D6     free.@SCRATCH1
+0D6     @PSTRINGC7_781.@SCRATCH1
+0D6     inputData.@SCRATCH2
+0D6     checkMK.@SCRATCH1
+0D6     @DIV88.@SCRATCH1
+0D7     lcd_goto_xy.y
+0D7     @I2C_READ_1.@SCRATCH1
+0D7     @PSTRINGC7_781.@SCRATCH2
+0D7     resetTKMK.@SCRATCH1
+0D7     checkMK.@SCRATCH2
+0D8     writeEEPROM.vitri
+0D8-0D9 traverse.temp
+0D8-0D9 malloc.nsize
+0D8-0D9 readEEPROM.arr
+0D8-0DB lcd_goto_xy.lcd_vitri
+0D8-0D9 strcmp.s1
+0D8     @I2C_READ_1.@SCRATCH2
+0D8     @PSTRINGC7_781.@SCRATCH3
+0D8     resetTKMK.@SCRATCH2
+0D8     checkTK.@SCRATCH1
+0D9     writeEEPROM.i
+0D9     lcd_data.mht
+0D9     @PSTRINGC7_781.@SCRATCH4
+0D9     checkTK.@SCRATCH2
+0DA-0DB traverse.nsize
+0DA-0DB insert_node_after.place
+0DA-0DB strcmp.s2
+0DA     readEEPROM.vitri
+0DA     malloc.@SCRATCH1
+0DA     writeEEPROM.@SCRATCH1
+0DB     readEEPROM.i
+0DB     malloc.@SCRATCH2
+0DB     writeEEPROM.@SCRATCH2
+0DC-0DD traverse.nextsize
+0DC-0DD insert_node_after.node
+0DC     readEEPROM.c
+0DC     malloc.@SCRATCH3
+0DC     strcmp.@SCRATCH1
+0DC     lcd_goto_xy.@SCRATCH1
+0DD     lcd_command.mdk
+0DD     malloc.@SCRATCH4
+0DD     readEEPROM.@SCRATCH1
+0DE-0DF lcd_out.x
+0DE-0DF create_node.size
+0DE-0DF update_node.node
+0DE-0DF remove_node.node
+0DE     insert_node_after.@SCRATCH1
+0DE     traverse.@SCRATCH1
+0DE     readEEPROM.@SCRATCH2
+0DF     insert_node_after.@SCRATCH2
+0DF     traverse.@SCRATCH2
+0E0-0E1 remove_node.ptr
+0E0-0E1 create_node.ptr
+0E0-0E1 update_node.size
+0E0     insert_node_after.@SCRATCH3
+0E1     insert_node_after.@SCRATCH4
+0E2-0E3 create_node.result
+0E2     update_node.@SCRATCH1
+0E2     remove_node.@SCRATCH1
+0E3     update_node.@SCRATCH2
+0E3     remove_node.@SCRATCH2
+0E4     create_node.@SCRATCH1
+0E4     remove_node.@SCRATCH3
+0E5     create_node.@SCRATCH2
+0E5     remove_node.@SCRATCH4
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  LCD_SO_X.call
+000008  LCD_SO_X.data
+00004A  @const851.call
+000055  @const865.call
+000060  @const866.call
+00006A  @const867.call
+000074  @const868.call
+000078  @const870.call
+000080  @const871.call
+000084  @const872.call
+000087  @const881.call
+000089  @const882.call
+00008B  @const883.call
+000093  @const884.call
+00009D  @const888.call
+00009F  @const889.call
+0000A1  @const890.call
+0000A6  @const892.call
+0000A8  @const894.call
+0000AF  @const895.call
+0000B1  @const897.call
+0000BC  @const904.call
+0000C3  @const905.call
+0000C5  @const920.call
+0000C6  @const921.call
+0000C8  @const924.call
+0000D3  @const933.call
+0000DD  @const934.call
+0000E7  @const935.call
+0000EA  @const936.call
+0000EC  @const937.call
+0000F7  @const938.call
+000100  @const939.call
+00010B  @const940.call
+000113  @const941.call
+00011D  @const942.call
+000128  lcd_out
+000140  lcd_command
+00014B  @delay_ms1
+00015F  lcd_setup
+000185  lcd_clear
+000190  lcd_goto_xy
+0001A4  lcd_data
+0001AF  @PSTRINGC7_781
+000223  manHinhDangNhap
+00025E  writeEEPROM
+0002BB  @MUL88
+0002E2  KEY_NHAN
+000339  inputData
+000344  DisplayInputTK
+00035F  xuLyInputTK
+0003AB  DisplayInputMK
+0003D0  xulyInputMK
+000415  readEEPROM
+000441  strcmp
+000487  checkTK
+0004CA  mHAdmin
+0004FF  @I2C_WRITE_1
+000549  @I2C_READ_1
+000594  mHUser
+0005BD  resetTKMK
+0005D3  kiemTraTKMK
+0005D7  checkMK
+000607  DOC_THOI_GIAN_TU_REALTIME
+0006D4  xulyDangNhapSai
+0006D4  manHinhThongBaoSai
+0006F1  sl
+000722  manHinhThemUser
+000751  thietLapAdmin1
+000759  thietLapAdmin2
+00075D  manHinhXoaTaiKhoan
+00076F  update_node
+000779  @DIV88
+000790  xuLyXemThem
+0007CE  thietLapAdmin3
+0007EF  backAdmin
+000800  readAllEpprom
+00081C  malloc
+00087C  create_node
+0008A1  insert_node_after
+000961  hienThiNDungCtRaLCD
+0009B8  hienthi
+000A05  free
+000A3C  traverse
+000AA1  remove_node
+000B20  thongBaoDoiMKTC
+000B42  manHinhDoiMatKhau
+001000  MAIN
+001000  @cinit1
+001019  @cinit2
+
+Project Directory:
+    C:\Users\DELL\Desktop\project do an\code\DoAn1\
+
+Project Files:
+    DoAn1_N_T.c                                             [06-May-20 20:38  CRC=3ADB2C65]
+    D:\APP\PICC\Devices\16f877.h                            [12-Nov-13 14:35  CRC=ADB5114D]
+    D:\APP\PICC\Drivers\stdlibm.h                           [24-Feb-12 09:58  CRC=9523303D]
+    D:\APP\PICC\Drivers\stddef.h                            [16-Jul-10 09:27  CRC=897CEC6C]
+    D:\APP\PICC\Drivers\memmgmt.c                           [24-Feb-12 09:47  CRC=E82E24A3]
+    D:\APP\PICC\Drivers\string.h                            [14-Jul-11 10:13  CRC=23EDEC8F]
+    D:\APP\PICC\Drivers\ctype.h                             [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\LCD\LCD2004.c                                        [06-May-20 21:02  CRC=F09C1181]
+    ..\DS1307\DS1307.c                                      [04-May-20 08:29  CRC=FE592717]
+
+Source signature=2DB9CCDB
+
+Units:
+    DoAn1_N_T (main)
+
+Compiler Settings:
+    Processor:      PIC16F877
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   DoAn1_N_T.xsym
+    Errors:      DoAn1_N_T.err
+    Ext Symbols: DoAn1_N_T.esym
+    INHX8:       DoAn1_N_T.hex
+    Symbols:     DoAn1_N_T.sym
+    List:        DoAn1_N_T.lst
+    Debug/COFF:  DoAn1_N_T.cof
+    Project:     DoAn1_N_T.ccspjt
+    Call Tree:   DoAn1_N_T.tre
+    Statistics:  DoAn1_N_T.STA

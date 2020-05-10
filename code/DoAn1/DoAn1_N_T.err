@@ -1,0 +1,5 @@
+>>> Warning 202 "C:\Users\DELL\Desktop\project do an\code\LCD\LCD2004.c" Line 40(21,33): Variable never used:   LCD_MA_8DOAN
+>>> Warning 202 "C:\Users\DELL\Desktop\project do an\code\DS1307\DS1307.c" Line 15(60,67): Variable never used:   GIAYTAM
+      Memory usage:   ROM=52%      RAM=33% - 40%
+      0 Errors,  2 Warnings.
+Build Successful.
